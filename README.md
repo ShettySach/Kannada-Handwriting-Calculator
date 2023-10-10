@@ -1,11 +1,13 @@
 # Kannada-Handwriting-Calculator
 
-A calculator that uses handwritten digits and operators to calculate the result, using contour detection and CNN model prediction.</br>
-***Tensorflow (Keras)*** is used to create, train and load the neural network model used for predictions.</br>
-***CustomTKinter*** is used to provide the GUI.</br>
-***OpenCV*** and ***Pillow (PIL)*** are used to read input from the GUI canvas and to obtain contours for individual digits/operators.</br>
-The individual digits/operators are detected and predicted. The predictions are combined into a string and evaluated to get the result.
+A calculator that uses handwritten digits and operators to calculate the result, using contour detection and CNN model prediction.
+- ***Tensorflow (Keras)*** is used to create, train and load the neural network model used for predictions.
+- ***CustomTKinter*** is used to provide the GUI.
+- ***OpenCV*** and ***Pillow (PIL)*** are used to read input from the GUI canvas and to obtain contours for individual digits/operators.
+- The individual digits/operators are detected and predicted. The predictions are combined into a string and evaluated to get the result.
 
+#### Contour boxes (green), predicted values (blue) and accuracies (red)
+![Contours](https://github.com/ShettySach/Kannada-Handwriting-Calculator/assets/132273464/6bdd2c19-5856-4ce6-95cf-cf0b0e73b750)
 
 
 ## Requirements -
