@@ -6,6 +6,8 @@ A calculator that uses handwritten digits and operators to calculate the result,
 - ***OpenCV*** and ***Pillow (PIL)*** are used to read input from the GUI canvas and to obtain contours for individual digits/operators.
 - The individual digits/operators are detected and predicted. The predictions are combined into a string and evaluated to get the result.
 
+![demo0](https://github.com/ShettySach/Kannada-Handwriting-Calculator/assets/132273464/b83897b4-e923-422e-ab08-7a94bb8ce2cd)
+
 #### Contour boxes (green), predicted values (blue) and accuracies (red)
 ![Contours](https://github.com/ShettySach/Kannada-Handwriting-Calculator/assets/132273464/6bdd2c19-5856-4ce6-95cf-cf0b0e73b750)
 
