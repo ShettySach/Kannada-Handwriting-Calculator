@@ -9,8 +9,7 @@ A calculator that uses handwritten ಕನ್ನಡ (Kannada) digits and operator
 ![demo0](https://github.com/ShettySach/Kannada-Handwriting-Calculator/assets/132273464/b83897b4-e923-422e-ab08-7a94bb8ce2cd)
 
 #### Contour boxes (green), predicted values (blue) and accuracies (red)
-![Contours](https://github.com/ShettySach/Kannada-Handwriting-Calculator/assets/132273464/6bdd2c19-5856-4ce6-95cf-cf0b0e73b750)
-
+![Contours](https://github.com/ShettySach/Kannada-Handwriting-Calculator/assets/132273464/f94fa474-4fd0-49d1-836a-eb3f8a018af3)
 
 ## Requirements -
 ```bash
