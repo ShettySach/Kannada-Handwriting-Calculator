@@ -40,7 +40,7 @@ def testing(img):
 
 def img_change():
     labimg = Image.open('Contours.png')
-    labimg = ctk.CTkImage(dark_image = labimg, size = (width//5,height//5))
+    labimg = ctk.CTkImage(dark_image = labimg, size = (width//2,height//2))
     image_label.configure(image=labimg)
     image_label.image = labimg
     
@@ -99,7 +99,7 @@ def solve_exp(preds):
         print(ind + " " + str(acc))
         
     try:
-        fin = eval(str(ans))
+        fin = eval(str(ans)) # Since only numbers and symbols can be input, eval can be used safely
         fin = str(float(f"{fin:.4f}"))
     
         txt.delete('1.0', ctk.END) # Delete prev expression
@@ -135,7 +135,7 @@ blue = (225, 0, 0)
 import os
 
 directory = os.getcwd()
-imsave = directory+"\\imgs\\"
+imsave = directory+"/imgs/"
 
 print("Images used by CNN to predict individual numbers are stored here: " + imsave)
 
@@ -223,7 +223,7 @@ def mod():
 
 
 width = 3500
-height = 750
+height = 1000
 
 # Canvas height and width can be adjusted here
 
@@ -279,28 +279,28 @@ white = (255, 255, 255)
 image1 = PIL.Image.new("RGB", (width, height), white)
 draw = ImageDraw.Draw(image1)
 
-your_font = "Bahnschrift" #You can change the font here
+your_font = "Liberation Sans" #You can change the font here
 
 # Text boxes
-text_font = ctk.CTkFont(family=your_font, size=25)
+text_font = ctk.CTkFont(family=your_font, size=50)
 txt = ctk.CTkTextbox(root, exportselection=0,
-              padx=10, pady=10, height=height//10, width=width//5, font=text_font)
+              padx=10, pady=10, height=height//4, width=width//2, font=text_font)
 txt.grid(row=2, column=0, padx=0, pady=3)
 
-sol_font = ctk.CTkFont(family=your_font, size=30, weight = "bold")
+sol_font = ctk.CTkFont(family=your_font, size=50, weight = "bold")
 sol = ctk.CTkTextbox(root, exportselection=0,
-              padx=10, pady=10, height=height//10, width=width//5, font=sol_font, text_color='#3085ff')
+              padx=10, pady=10, height=height//4, width=width//2, font=sol_font, text_color='#3085ff')
 sol.grid(row=3, column=0, padx=0, pady=3)
 
 # Image box
 labimg = Image.open("Blank.png")
-labimg = ctk.CTkImage(dark_image = labimg, size = (width//5,height//5)) 
+labimg = ctk.CTkImage(dark_image = labimg, size = (width//2,height//2)) 
 
 image_label = ctk.CTkLabel(root, image=labimg, text="")
 image_label.grid(row=2, column=1, padx=10, pady=5, rowspan = 2)
 
 # Buttons
-button_font = ctk.CTkFont(family=your_font, size=15)
+button_font = ctk.CTkFont(family=your_font, size=50)
 Pred = ctk.CTkButton(root, text="Calculate", command=mod, fg_color = '#0056C4', hover_color='#007dfe',font = button_font,
                     height = height//22.5)
 Clr = ctk.CTkButton(root, text="Clear", command=clear, fg_color = '#B50000', hover_color='#dd0000', font = button_font,
